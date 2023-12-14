@@ -3,6 +3,26 @@
 @import "mixins.scss";
 @import "general.scss";
 
+.button {
+  padding: 20px 60px;
+  font-size: 20px;
+  color: #598d66;
+  background-color: transparent;
+  border: 1px solid #598d66;
+  cursor: pointer;
+  transition: 0.5s ease all;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: #d4e8d9;
+    border: 1px solid #598d66;
+    color: #598d66;
+  }
+}
+
 .header {
   background: #e1ede6;
 }
@@ -71,6 +91,48 @@
     outline: 5px solid #598d66;
     outline-offset: 5px;
   }
+}
+
+.promo__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.promo__img-wrapper {
+  max-width: 540px;
+}
+
+.promo__img {
+  width: 100%;
+  height: auto;
+}
+
+.promo__description {
+  max-width: 540px;
+}
+
+.promo__title {
+  margin: 0;
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 110%;
+  cursor: default;
+
+  span {
+    color: #598d66;
+  }
+}
+
+.promo__text {
+  margin: 0;
+  padding: 20px 0;
+  color: #86928b;
+  cursor: default;
+}
+
+.promo__button {
+  margin-top: 40px;
 }
 
 @import "media.scss";

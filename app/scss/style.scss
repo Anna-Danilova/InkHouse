@@ -2,3 +2,75 @@
 @import "variables.scss";
 @import "mixins.scss";
 @import "general.scss";
+
+.header {
+  background: #e1ede6;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 100px;
+}
+
+.logo {
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 5px solid #598d66;
+    outline-offset: 5px;
+  }
+}
+
+.main-menu {
+  display: flex;
+  gap: 60px;
+}
+
+.main-menu__button {
+  display: none;
+}
+
+.main-menu__list {
+  display: flex;
+  gap: 60px;
+}
+
+.main-menu__link {
+  font-size: 20px;
+  color: #2c2d35;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: 0.5s ease all;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: #598d66;
+    color: #f4f6f5;
+  }
+}
+
+.main-menu__basket {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: 5px solid #598d66;
+    outline-offset: 5px;
+  }
+}
+
+@import "media.scss";

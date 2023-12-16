@@ -47,12 +47,26 @@
 }
 
 .main-menu {
+  position: relative;
   display: flex;
   gap: 60px;
 }
 
 .main-menu__button {
+  position: relative;
+  z-index: 10;
   display: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  background-image: url(../images/icons/hamburger.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border: none;
+
+  &--close {
+    background-image: url(../images/icons/hamburger-close.svg);
+  }
 }
 
 .main-menu__list {

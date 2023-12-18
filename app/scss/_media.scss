@@ -14,6 +14,11 @@
       transition: 0.5s ease all;
     }
   }
+
+  .countries-list__button:hover {
+    background: #598d66;
+    color: #f4f6f5;
+  }
 }
 
 @media (max-width: 768px) {

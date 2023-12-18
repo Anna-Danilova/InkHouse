@@ -15,7 +15,7 @@
     }
   }
 
-  .countries-list__button:hover {
+  .countries-list__button:not(.countries-list__button--active):hover {
     background: #598d66;
     color: #f4f6f5;
   }
@@ -24,6 +24,10 @@
 @media (max-width: 768px) {
   .container {
     padding: 0 39px;
+  }
+
+  .title {
+    font-size: 30px;
   }
 
   .main-menu__link {
@@ -42,6 +46,10 @@
   .promo__button {
     margin-top: 20px;
   }
+
+  .assortment__list {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (max-width: 576px) {
@@ -55,6 +63,10 @@
 
   .button {
     font-size: 18px;
+  }
+
+  .title {
+    font-size: 24px;
   }
 
   .logo {
@@ -91,6 +103,14 @@
   .promo__button {
     margin-top: 0;
   }
+
+  .countries-list {
+    margin-top: 20px;
+  }
+
+  .countries-list__button {
+    font-size: 18px;
+  }
 }
 
 @media (max-width: 480px) {
@@ -108,6 +128,15 @@
 
   .promo__text {
     font-size: 14px;
+  }
+
+  .countries-list {
+    gap: 20px;
+    overflow-x: hidden;
+  }
+
+  .assortment__list {
+    grid-template-columns: 100%;
   }
 }
 
@@ -168,5 +197,21 @@
 
   .promo__button {
     margin-top: 20px;
+  }
+
+  .reproduction__artist {
+    font-size: 16px;
+  }
+
+  .reproduction__painting {
+    font-size: 24px;
+  }
+
+  .reproduction__materials {
+    font-size: 16px;
+  }
+
+  .reproduction__price {
+    font-size: 20px;
   }
 }

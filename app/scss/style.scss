@@ -342,6 +342,11 @@
   gap: 30px;
 }
 
+.team__img {
+  width: 40%;
+  object-fit: contain;
+}
+
 .team__content {
   margin-top: 125px;
 }
@@ -349,6 +354,7 @@
 .team__text {
   margin: 0;
   padding: 20px 0;
+  cursor: default;
 }
 
 .team__members-list {

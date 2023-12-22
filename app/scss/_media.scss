@@ -24,6 +24,17 @@
     background: #598d66;
     color: #f4f6f5;
   }
+
+  .social__link:hover {
+    svg path {
+      fill: #598d66;
+      transition: 0.5s ease all;
+    }
+  }
+
+  .footer__link:hover {
+    color: #598d66;
+  }
 }
 
 @media (max-width: 768px) {

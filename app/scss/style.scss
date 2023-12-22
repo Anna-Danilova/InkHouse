@@ -333,7 +333,8 @@
 }
 
 .team {
-  padding: 30px 0;
+  padding-top: 30px;
+  padding-bottom: 70px;
 }
 
 .team__wrapper {
@@ -366,6 +367,101 @@
   width: 80px;
   height: 80px;
   border-radius: 100%;
+}
+
+.footer {
+  padding: 23px 0;
+  background-color: #e1ede6;
+}
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 60px;
+}
+
+.footer__logo-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.footer__list-reproduction {
+  grid-column-start: 3;
+}
+
+.footer__link {
+  color: #86928b;
+  line-height: 150%;
+  text-decoration: none;
+  transition: 0.5s ease all;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: #598d66;
+    color: #f4f6f5;
+  }
+}
+
+.footer__social-content {
+  grid-column-start: 8;
+}
+
+.contacts {
+  margin: 0;
+}
+
+.contacts__phone {
+  display: block;
+  font-size: 20px;
+  color: #2c2d35;
+  text-wrap: nowrap;
+  text-decoration: none;
+  transition: 0.5s ease all;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    background-color: #598d66;
+    color: #f4f6f5;
+  }
+}
+
+.contacts__description {
+  color: #86928b;
+  cursor: default;
+}
+
+.social {
+  display: flex;
+  gap: 30px;
+}
+
+.social__link {
+  transition: 0.5s ease all;
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus-visible {
+    svg path {
+      fill: #598d66;
+    }
+  }
+}
+
+.copywrite {
+  margin: 0;
+  font-size: 12px;
+  color: #86928b;
+  line-height: 120%;
+  cursor: default;
 }
 
 @import "media.scss";

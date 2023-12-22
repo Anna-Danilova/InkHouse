@@ -376,8 +376,7 @@
 
 .footer__wrapper {
   display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 60px;
+  grid-template-columns: repeat(8, auto);
 }
 
 .footer__logo-wrapper {
@@ -457,6 +456,8 @@
 }
 
 .copywrite {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   font-size: 12px;
   color: #86928b;

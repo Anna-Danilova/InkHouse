@@ -170,7 +170,8 @@
   }
 
   .promo__wrapper {
-    padding: 50px 0;
+    padding-top: 50px;
+    padding-bottom: 25px;
   }
 
   .promo__description {
@@ -196,6 +197,19 @@
 
   .countries-list__button {
     font-size: 18px;
+  }
+
+  .assortment__title-wrapper {
+    margin-top: 25px;
+  }
+
+  .assortment__list {
+    padding-top: 20px;
+    padding-bottom: 25px;
+  }
+
+  .new-collection {
+    padding: 25px 0;
   }
 
   .new-collection__content {
@@ -226,6 +240,11 @@
   }
   .new-collection__button {
     margin-top: 10px;
+  }
+
+  .team {
+    padding-bottom: 50px;
+    padding-top: 25px;
   }
 
   .team__wrapper {

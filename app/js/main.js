@@ -13,19 +13,25 @@ menuBtn.addEventListener("click", function () {
 //TABS
 
 const tabs = document.querySelectorAll(".countries-list__button");
+const footerTab = document.querySelectorAll(".footer__tab");
 const lists = document.querySelectorAll(".assortment__list");
 
-for (let i = 0; i < tabs.length; i++) {
-  tabs[i].addEventListener("click", function (event) {
-    for (let t = 0; t < tabs.length; t++) {
-      tabs[t].classList.remove("countries-list__button--active");
-    }
-    event.target.classList.add("countries-list__button--active");
-  });
-  tabs[i].addEventListener("click", function () {
-    for (let c = 0; c < tabs.length; c++) {
-      lists[c].classList.remove("assortment__list--active");
-    }
-    lists[i].classList.add("assortment__list--active");
-  });
+function switchTab(button) {
+  for (let i = 0; i < button.length; i++) {
+    button[i].addEventListener("click", function () {
+      for (let t = 0; t < tabs.length; t++) {
+        tabs[t].classList.remove("countries-list__button--active");
+      }
+      tabs[i].classList.add("countries-list__button--active");
+    });
+    button[i].addEventListener("click", function () {
+      for (let c = 0; c < tabs.length; c++) {
+        lists[c].classList.remove("assortment__list--active");
+      }
+      lists[i].classList.add("assortment__list--active");
+    });
+  }
 }
+
+switchTab(tabs);
+switchTab(footerTab);

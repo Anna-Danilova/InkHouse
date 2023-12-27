@@ -395,6 +395,11 @@
   text-decoration: none;
   transition: 0.5s ease all;
 
+  &--title {
+    font-size: 20px;
+    color: #2c2d35;
+  }
+
   &:focus {
     outline: none;
   }

@@ -73,7 +73,7 @@
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="../images/favicon/favicon-16x16.png"
+      href="images/favicon/favicon-16x16.png"
     />
     <link rel="manifest" href="../images/favicon/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
@@ -106,13 +106,13 @@
             </button>
             <ul class="main-menu__list reset-list">
               <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Репродукции</a>
+                <a class="main-menu__link" href="#reproductions">Репродукции</a>
               </li>
               <li class="main-menu__item">
-                <a class="main-menu__link" href="#">Новинки</a>
+                <a class="main-menu__link" href="#new">Новинки</a>
               </li>
               <li class="main-menu__item">
-                <a class="main-menu__link" href="#">О нас</a>
+                <a class="main-menu__link" href="#about">О нас</a>
               </li>
             </ul>
             <button class="main-menu__basket">
@@ -188,7 +188,7 @@
       <section class="assortment">
         <div class="container">
           <div class="assortment__title-wrapper">
-            <h2 class="title">Репродукции</h2>
+            <h2 class="title" id="reproductions">Репродукции</h2>
             <ul class="countries-list reset-list">
               <li class="countries-list__item">
                 <button
@@ -542,7 +542,7 @@
         <div class="new-collection__wrapper">
           <div class="container">
             <div class="new-collection__content">
-              <h2 class="title title--white new-collection__title">
+              <h2 class="title title--white new-collection__title" id="new">
                 Новая коллекция французских авторов
               </h2>
               <p class="new-collection__text">
@@ -572,7 +572,7 @@
             alt="Рука с зажатыми в ней кисточками"
           />
           <div class="team__content">
-            <h2 class="title">Наша команда</h2>
+            <h2 class="title" id="about">Наша команда</h2>
             <p class="team__text">
               У нас собрана команда профессионалов, которая создана для
               достижения общей цели, отвечает за результат и способна оперативно
@@ -627,33 +627,51 @@
             </p>
           </div>
           <ul class="footer__list footer__list-reproduction reset-list">
-            Репродукции
             <li class="footer__list-item">
-              <a href="#" class="footer__link">Франция</a>
+              <a class="footer__link footer__link--title" href="#reproductions"
+                >Репродукции</a
+              >
             </li>
             <li class="footer__list-item">
-              <a href="#" class="footer__link">Германия</a>
+              <a href="#reproductions" class="footer__link footer__tab"
+                >Франция</a
+              >
             </li>
             <li class="footer__list-item">
-              <a href="#" class="footer__link">Англия</a>
+              <a href="#reproductions" class="footer__link footer__tab"
+                >Германия</a
+              >
+            </li>
+            <li class="footer__list-item">
+              <a href="#reproductions" class="footer__link footer__tab"
+                >Англия</a
+              >
             </li>
           </ul>
           <ul class="footer__list footer__list-new reset-list">
-            Новинки
             <li class="footer__list-item">
-              <a href="#" class="footer__link">2021</a>
+              <a class="footer__link footer__link--title" href="#new"
+                >Новинки</a
+              >
             </li>
             <li class="footer__list-item">
-              <a href="#" class="footer__link">2022</a>
+              <a href="#new" class="footer__link">2021</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#new" class="footer__link">2022</a>
             </li>
           </ul>
           <ul class="footer__list footer__list-about reset-list">
-            О нас
             <li class="footer__list-item">
-              <a href="#" class="footer__link">Художники</a>
+              <a class="footer__link footer__link--title" href="#about"
+                >О нас</a
+              >
             </li>
             <li class="footer__list-item">
-              <a href="#" class="footer__link">Менеджеры</a>
+              <a href="#about" class="footer__link">Художники</a>
+            </li>
+            <li class="footer__list-item">
+              <a href="#about" class="footer__link">Менеджеры</a>
             </li>
           </ul>
           <div class="footer__social-content">
